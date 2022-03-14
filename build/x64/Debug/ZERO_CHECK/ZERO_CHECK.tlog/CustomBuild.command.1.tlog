@@ -1,0 +1,10 @@
+^C:\USERS\UMADEVI\WORK\PYTHON_PROJECT\HELLOWORD\BUILD\CMAKEFILES\73EDF1E98FF832F8FF86472DBCE17710\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Umadevi/Work/Python_Project/Helloword -BC:/Users/Umadevi/Work/Python_Project/Helloword/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Umadevi/Work/Python_Project/Helloword/build/HelloWorld.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

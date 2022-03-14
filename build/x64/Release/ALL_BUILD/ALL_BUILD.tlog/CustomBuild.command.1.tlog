@@ -1,0 +1,10 @@
+^C:\USERS\UMADEVI\WORK\PYTHON_PROJECT\HELLOWORD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Umadevi/Work/Python_Project/Helloword -BC:/Users/Umadevi/Work/Python_Project/Helloword/build --check-stamp-file C:/Users/Umadevi/Work/Python_Project/Helloword/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
